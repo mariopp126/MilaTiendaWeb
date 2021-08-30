@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --coral: #8B0000;
+    --orange: #FFA500;
+    --degraded: linear-gradient(90deg, var(var(--orange),var(--coral)));
+}
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+*::selection{
+    background: var(--orange);
+    color: white;
+}
+html{
+    font-size: 62%.4;
+    overflow: hidden;
+}
+body{
+    background: whitesmoke;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0,0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-size: 1.5rem;
+    color: var(--coral);
+}
+header .logo span{
+    color: var(--orange);
+}
+header .navbar a{
+    font-size: 1.3rem;
+    margin-left: 1.8rem;
+    color: var(--coral);
+}
+header .navbar a:hover{
+    color: var(--orange);
+}

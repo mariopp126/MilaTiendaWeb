@@ -1,0 +1,6 @@
+<!-- tienda/templates/opiniones.html -->
+{% for opinion in opiniones %}
+    <h2>{{ opinion.autor }}</h2>
+    <p>{{ opinion.comentario }}</p>
+    <p>Rating: {{ opinion.rating }} estrellas</p>
+{% endfor %}
